@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <!-- style.css -->
+    <link rel="stylesheet" href="../css/style.css" type="text/css" />
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+
+    <!-- aos animate -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>Maksud dan Tujuan</title>
+  </head>
+  <body>
+    <!-- sidenav -->
+    <div class="sidenav d-block d-md-block d-lg-none fw-bold" id="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fa-solid fa-xmark"></i></a>
+      <a class="sidenav_item" href="#">Beranda</a>
+      <a class="dropdown-toggle sidenav_item" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+        Profil Yayasan
+      </a>
+      <div class="dropdown-menu drop_sidenav" aria-labelledby="dropdownMenuLink">
+        <a class="dropdown-item drop_sidenav_item" href="#">Pendahuluan</a>
+        <a class="dropdown-item drop_sidenav_item" href="#">Maksud & Tujuan</a>
+        <a class="dropdown-item drop_sidenav_item" href="#">Visi & Misi</a>
+        <a class="dropdown-item drop_sidenav_item" href="#">Susunan Pengurus</a>
+      </div>
+      <a class="sidenav_item" href="#">Program Kerja</a>
+      <a class="sidenav_item" href="#">Artikel</a>
+      <div class="sidenav_block" id="sidenav_block"></div>
+    </div>
+    
+
+    <header class="w-100 sticky-md-top shadow">
+      <div class="navbar navbar-expand-lg navbar-light bg-white p-0">
+        <div class="container-fluid p-0">
+          <a class="navbar-brand w-25 ms-3" href="#">
+            <img src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="logo yayasan" width="30" height="24" class="d-inline-block align-text-top" />
+          </a>
+          <button class="navbar_toggler me-3 border-0 d-block d-md-block d-lg-none" type="button" data-bs-toggle="collapse" onclick="openNav()"/>
+            <span>
+              <i class="fa-solid fa-bars fs-5" ></i>
+            </span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="grid w-100">
+              <!-- navbar bagian konten-->
+              <nav class="navbar navbar-light bg-white">
+                <div class="container-fluid">
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li>
+                        <span><i class="fa-solid fa-heart love_animate"></i></span>
+                      </li>
+                      <li class="nav-item mx-3 text-secondary my-auto">
+                        <div class="d-flex">
+                          <span class="my-auto mx-2"><i class="fa-solid fa-phone fs-3"></i></span>
+                          <div class="d-grid my-auto">
+                            <p class="my-0" style="font-size: 13px">Telphone:</p>
+                            <a class="text-decoration-none text-secondary my-0 fw-bold" style="font-size: 15px" href="tel:6285221703678">+62 852-2170-3678</a>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="nav-item mx-3 text-secondary my-auto">
+                        <div class="d-flex">
+                          <span class="my-auto mx-2"><i class="fa-solid fa-envelope-open-text fs-3"></i></span>
+                          <div class="d-grid my-auto">
+                            <p class="my-0" style="font-size: 13px">Kirim email:</p>
+                            <a class="text-decoration-none text-secondary my-0 fw-bold" style="font-size: 15px" href="mailto:gckyayasan@gmail.com">gckyayasan@gmail.com</a>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="nav-item mx-3 text-secondary my-auto">
+                        <div class="d-flex">
+                          <span class="my-auto mx-2"><i class="fa-solid fa-location-dot fs-3"></i></span>
+                          <div class="d-grid my-auto">
+                            <p class="my-0" style="font-size: 13px">Desa. Sindang Raja RT.01 / 03 Kec. Jamanis</p>
+                            <p class="fw-bold my-0" style="font-size: 15px">Kab.Tasikmalaya, Indonesia</p>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+
+              <!-- navbar bagian menu -->
+              <nav class="navbar navbar-dark navbar_rounded_start p-0">
+                <div class="container-fluid flex p-0">
+                  <div class="collapse navbar-collapse w-75 py-0" id="navbarNavAltMarkup">
+                    <ul class="navbar-nav fw-bold">
+                      <li class="nav-item mx-4">
+                        <a class="nav-link active py-3" href="#">Beranda</a>
+                      </li>
+                      <li class="nav-item dropdown mx-4">
+                        <a class="nav-link dropdown_btn py-3" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Profil Yayasan</a>
+                        <div class="dropdown-content" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item " href="#">Pendahuluan</a>
+                          <a class="dropdown-item" href="#">Maksud & Tujuan</a>
+                          <a class="dropdown-item" href="#">Visi & Misi</a>
+                          <a class="dropdown-item" href="#">Susunan Pengurus</a>
+                        </div>
+                      </li>
+                      <li class="nav-item mx-4">
+                        <a class="nav-link py-3" href="#">Program Kerja</a>
+                      </li>
+                      <li class="nav-item mx-4">
+                        <a class="nav-link py-3" href="#">Galeri</a>
+                      </li>
+                      <li class="nav-item mx-4">
+                        <a class="nav-link py-3" href="#">Artikel</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- button wakaf -->
+                  <a href="#" class="btn btn_wakaf px-5 m-0  py-3 rounded-0 fw-bold position-end"><i class="fa-solid fa-heart"></i> Wakaf</a>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section>
+        <div class="container-fluid p-0">
+            <div class="jumbotron-page mt-0">
+                <img src="../asset/img/jumbotron/pendahuluan.webp" alt="gambar pendahuluan">
+                <div class="text-caption text-center text-white fw-bold">
+                    <span>Home &nbsp;/&nbsp;</span> <span class="text-warning">Pages</span>
+                    <h2>Visi dan Misi</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <div class="container-fluid bg-white p-5">
+          <div class="text-justify mt-5 px-2 pt-3">
+            <p class="fw-bold">Visi</p>
+            <ol>
+                <li>Menjadi Organisasi Yayasan Sosial yang amanah dan professional untuk memberdayakan dan mensejahterakan masyarakat, sehingga terwujudnya masyarakat yang cerdas berkemanusiaan, sejahtera dan berkeadilan sosial.</li>
+                <li>Terwujudnya Yayasan yang berperan aktif memberikan layanan di bidang keagamaan, kemanusiaan dan social dengan upaya meningkatkan potensi dan kesejahteraan kehidupan masyarakat.</li>
+                <li>Ikut berperan menciptakan tatanan masyarakat yang lebih berdaya guna hidup bersih, sehat serta gemar belajar, bermoral dan beramal.</li>
+            </ol>
+          </div>
+        </div>
+    </section>
+    <hr class="mx-5 pt-1">
+    
+
+    <section>
+        <div class="container-fluid bg-white p-5">
+          <div class="text-justify mb-5 px-2 pb-3">
+            <p class="fw-bold">Misi</p>
+            <ol>
+                <li>Melaksanakan program-program keagamaan, kemanusiaan, dan sosial yang sesuai kebutuhan masyarakat.</li>
+                <li>Mewujudkan kerja sama antara Yayasan dengan donator dan antara yayasan dengan masyarakat, agar berbagai pelayanan pendidikan dan bantuan social terhadap masyarakat yang tidak terjangkau oleh program pemerintah dapat terlaksana.</li>
+                <li>Membina kaum dhuafa dan yatim menjadi hidup lebih sejahtera.</li>
+                <li>Menghantarkan masyarakat dhuafa dan yatim menggapai prestasi melalui pendidikan, pelatihan, minat maupun bakat serta meningkatkan daya juang bagi kemuliaan hidup dan kebahagiaan masa depan</li>
+                <li>Membangun sebuah organisasi yayasan yang kuat serta mempunyai kredibilitas dan akuntabilitas terhadap donator dan masyarakat sehingga tercapai tujuan-tujuan sosial sesuai dengan visi dan nilai-nilai yang ditetapkan.</li>
+            </ol>
+          </div>
+        </div>
+    </section>
+
+  <section id="footer">
+    <div class="footer container-fluid py-1 px-5">
+      <footer class="row pt-4">
+        <div class="col-md-4 mb-4">
+          <h4 class="mb-3 fw-bold border-bottom">INFORMASI</h4>
+          <ul class="nav flex-column text">
+            <li class="nav-item mb-2">YAYASAN GAPURA</li>
+            <li class="nav-item mb-2">CAHYANING KAHURIPAN (GCK)</li>
+            <li class="nav-item mb-2">Kampung Suka Mulya  RT.01 / 03,  Desa. Sindang Raja Kec. Jamanis, Kab.Tasikmalaya</li>
+            <li class="nav-item mb-2">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.41648278864!2d108.18252191477457!3d-7.1932284948067124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f4f6def92003b%3A0xb0f78ec9b21a4275!2sGCK%20Foundation%20Tasikmalaya!5e0!3m2!1sid!2sid!4v1625057774989!5m2!1sid!2sid" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </li>
+          </ul>
+        </div>
+    
+        <div class="col-md-4 mb-4">
+          <h4 class="mb-3 fw-bold border-bottom">Kontak</h4>
+          <table class="text">
+            <tr>
+              <td>Telpon 1</td>
+              <td class="px-3">:</td>
+              <td>+62 852-2170-3678</td>
+            </tr>
+            <tr>
+              <td>Telpon 2</td>
+              <td class="px-3">:</td>
+              <td>+62 822-9899-6794</td>
+            </tr>
+            <tr>
+              <td>Email</td>
+              <td class="px-3">:</td>
+              <td> gckyayasan@gmail.com</td>
+            </tr>
+            <tr>
+              <td>Bio</td>
+              <td class="px-3">:</td>
+              <td><a href="https://instabio.cc/gckfoundation" class="text-decoration-none text-warning">gckfoundation</a></td>
+            </tr>
+            <tr>
+              <td>No Rek BRI</td>
+              <td class="px-3">:</td>
+              <td>4442-01-016045-53-1</td>
+            </tr>
+            <tr>
+              <td colspan="3" class="py-3">YAYASAN GAPURA CAHYANING KAHURIPAN</td>
+            </tr>
+          </table>
+        </div>
+
+
+        <div class="col-md-4 mb-4">
+          <h4 class="mb-3 fw-bold border-bottom">BEKERJA SAMA DENGAN</h4>
+          <img src="../asset/img/logo/logo-website-versi-desktop.png" alt="logo arpateam" class="w-75">
+        </div>
+      </footer>
+    </div>
+    <div class="copyright text-center py-4">© 2022 GCK Foundation. All Rights Reserved | Website by <a href="https://www.arpateam.com/" class="text-decoration-none text-link fw-bold">#ARPATEAM</a></div>
+  </section>
+
+<!-- button scroll to top -->
+<button onclick="topFunction()" id="btn_to_top" title="Go to top"><i class="fa-solid fa-angle-up"></i></button>
+
+
+
+
+
+
+<script>
+  //Get the button
+var mybutton = document.getElementById("btn_to_top");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+  <!-- GetButton.io widget -->
+<script type="text/javascript">
+  (function () {
+      var options = {
+          call: "+6285221703678", // Call phone number
+          email: "gckyayasan@gmail.com", // Email
+          call_to_action: "", // Call to action
+          button_color: "#00715d", // Color of button
+          position: "left", // Position may be 'right' or 'left'
+          order: "call,email", // Order of buttons
+      };
+      var proto = 'https:', host = "getbutton.io", url = proto + '//static.' + host;
+      var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+      s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+      var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+  })();
+</script>
+<!-- /GetButton.io widget -->
+
+    <!-- script sidenav -->
+    <script>
+      function openNav() {
+        document.getElementById('sidenav').style.width = '100%';
+
+      }
+
+      function closeNav() {
+        document.getElementById('sidenav').style.width = '0';
+      }
+    </script>
+
+    <!-- aos animate -->
+    <script>
+      AOS.init();
+    </script>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- font awesome -->
+    <script src="https://example.com/fontawesome/v6.1.2/js/all.js" data-observe-mutations></script>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
