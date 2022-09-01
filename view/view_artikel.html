@@ -4,7 +4,8 @@
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
     <!-- style.css -->
@@ -15,7 +16,11 @@
     <!-- aos animate -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <title>Maksud dan Tujuan - Yayasan Gapura Cahyaning Kahuripan</title>
+
+    <!-- slick js -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <title>Artikel - Yayasan Gapura Cahyaning Kahuripan</title>
   </head>
   <body>
     <!-- sidenav -->
@@ -98,7 +103,7 @@
                         <a class="nav-link py-3" href="index.html">Beranda</a>
                       </li>
                       <li class="nav-item dropdown mx-4">
-                        <a class="nav-link dropdown_btn py-3 active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Profil Yayasan</a>
+                        <a class="nav-link dropdown_btn py-3" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Profil Yayasan</a>
                         <div class="dropdown-content" aria-labelledby="navbarDropdown">
                           <a class="dropdown-item" href="profil_pendahuluan.html">Pendahuluan</a>
                           <a class="dropdown-item" href="profil_maksud.html">Maksud & Tujuan</a>
@@ -113,7 +118,7 @@
                         <a class="nav-link py-3" href="gallery.html">Galeri</a>
                       </li>
                       <li class="nav-item mx-4">
-                        <a class="nav-link py-3" href="artikel.html">Artikel</a>
+                        <a class="nav-link py-3 active" href="artikel.html">Artikel</a>
                       </li>
                     </ul>
                   </div>
@@ -133,30 +138,137 @@
           <img src="../asset/img/jumbotron/pendahuluan.webp" alt="gambar pendahuluan" />
           <div class="carousel-caption text-caption text-center text-white fw-bold">
             <span>Home &nbsp;/&nbsp;</span> <span class="text-warning">Pages</span>
-            <h2>Maksud & Tujuan</h2>
+            <h2>Artikel</h2>
           </div>
         </div>
       </div>
     </section>
 
     <section>
-      <div class="container-fluid bg-white p-5">
-        <div class="text-justify my-5 px-2 py-3">
-          <p class="fw-bold">Maksud dan Tujuan pendirian Yayasa</p>
-          <ol>
-            <li>Melakukan kegiatan di bidang sosial, kemanusiaan&nbsp;&nbsp;dan keagamaan.</li>
-            <li>Meningkatkan dan membangun Sumber Daya Manusia serta fasilitas pendidikan dan kemasyarakatan demi tercapainya upaya peningkatan Indek Pembangunan Manusia.</li>
-            <li>Mengembangkan dakwah Agama di masyarakat demi terciptanya masyarakat yang bertaqwa,berbudi luhur,berpengetahuan mumpuni,cakap dan terampil serta bertanggungjawab terhadap agama,bangsa dan&nbsp;&nbsp;Negara.</li>
-            <li>Memberikan bantuan / santunan dan meningkatkan kesejahteraan dan kualitas hidup masyarakat.</li>
-          </ol>
+      <div class="container-fluid p-5">
+        <div class="row">
+          <div class="col-md-9 mb-5 hidden-scrollbar">
+            <div class="inner">
+              <div class="view-img-artikel mb-5">
+                <img class="w-100" src="../asset/img/other/1.webp" alt="gambar view artikel" />
+              </div>
+              <div class="text">
+                <h3 class="fw-bold">Tittle Artikel</h3>
+
+                <p class="text-justify pb-4">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis eveniet voluptatum consectetur accusantium inventore vel consequuntur itaque quas! Atque quam vel magni maiores necessitatibus sed ab debitis cupiditate.
+                  Expedita, soluta! Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, nisi tempora. Magnam nam fuga ut maxime esse distinctio ratione accusamus nesciunt perferendis minus natus in illum, numquam,
+                  voluptates nobis qui. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, cumque accusantium! Dolorem exercitationem deserunt hic deleniti ab fuga placeat est expedita sunt, delectus in labore repellat
+                  maiores pariatur unde id! <br />
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque atque velit sint voluptas! Ipsum ipsam, officiis aliquid corporis quia id minus fugiat, reprehenderit vel vitae impedit voluptas consequatur nulla! Illum?
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore laborum deserunt molestiae esse eveniet obcaecati aliquid, quidem sed, alias corrupti dolor nemo repudiandae harum nam doloremque aspernatur illo delectus
+                  quisquam.
+                  <br />
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque atque velit sint voluptas! Ipsum ipsam, officiis aliquid corporis quia id minus fugiat, reprehenderit vel vitae impedit voluptas consequatur nulla! Illum?
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore laborum deserunt molestiae esse eveniet obcaecati aliquid, quidem sed, alias corrupti dolor nemo repudiandae harum nam doloremque aspernatur illo delectus
+                  quisquam.
+                  <br />
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque atque velit sint voluptas! Ipsum ipsam, officiis aliquid corporis quia id minus fugiat, reprehenderit vel vitae impedit voluptas consequatur nulla! Illum?
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore laborum deserunt molestiae esse eveniet obcaecati aliquid, quidem sed, alias corrupti dolor nemo repudiandae harum nam doloremque aspernatur illo delectus
+                  quisquam.
+                  <br />
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque atque velit sint voluptas! Ipsum ipsam, officiis aliquid corporis quia id minus fugiat, reprehenderit vel vitae impedit voluptas consequatur nulla! Illum?
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore laborum deserunt molestiae esse eveniet obcaecati aliquid, quidem sed, alias corrupti dolor nemo repudiandae harum nam doloremque aspernatur illo delectus
+                  quisquam.
+                  <br />
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque atque velit sint voluptas! Ipsum ipsam, officiis aliquid corporis quia id minus fugiat, reprehenderit vel vitae impedit voluptas consequatur nulla! Illum?
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore laborum deserunt molestiae esse eveniet obcaecati aliquid, quidem sed, alias corrupti dolor nemo repudiandae harum nam doloremque aspernatur illo delectus
+                  quisquam.
+                  <br />
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque atque velit sint voluptas! Ipsum ipsam, officiis aliquid corporis quia id minus fugiat, reprehenderit vel vitae impedit voluptas consequatur nulla! Illum?
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore laborum deserunt molestiae esse eveniet obcaecati aliquid, quidem sed, alias corrupti dolor nemo repudiandae harum nam doloremque aspernatur illo delectus
+                  quisquam.
+                  <br />
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque atque velit sint voluptas! Ipsum ipsam, officiis aliquid corporis quia id minus fugiat, reprehenderit vel vitae impedit voluptas consequatur nulla! Illum?
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore laborum deserunt molestiae esse eveniet obcaecati aliquid, quidem sed, alias corrupti dolor nemo repudiandae harum nam doloremque aspernatur illo delectus
+                  quisquam.
+                  <br />
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque atque velit sint voluptas! Ipsum ipsam, officiis aliquid corporis quia id minus fugiat, reprehenderit vel vitae impedit voluptas consequatur nulla! Illum?
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore laborum deserunt molestiae esse eveniet obcaecati aliquid, quidem sed, alias corrupti dolor nemo repudiandae harum nam doloremque aspernatur illo delectus
+                  quisquam.
+                </p>
+              </div>
+            </div>
+            <div class="text text-secondary mb-3" style="font-size: small">
+              <p class="m-0">Author : <span>nama autor</span></p>
+              <p class="m-0">Tanggal : <span>23 September 2022</span></p>
+            </div>
+
+            <div class="share-button">
+              <span>Bagikan : </span>
+              <a role="button" href="#" title="Instagram" class="btn btn-sm btn-outline-secondary"><i class="fa-brands fa-instagram"></i></a>
+              <a role="button" href="#" title="Facebook" class="btn btn-sm btn-outline-secondary"><i class="fa-brands fa-facebook"></i></a>
+              <a role="button" href="#" title="LinkedIn" class="btn btn-sm btn-outline-secondary"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a role="button" href="#" title="Whatsapp" class="btn btn-sm btn-outline-secondary"><i class="fa-brands fa-whatsapp"></i></a>
+              <a role="button" href="#" title="Telegram" class="btn btn-sm btn-outline-secondary"><i class="fa-brands fa-telegram"></i></a>
+            </div>
+            <hr />
+          </div>
+          <div class="col-md-3 mb-5">
+            <h4 class="fw-bold text-center">Artikel Lainnya</h4>
+            <div class="d-grid justify-content-center">
+              <div class="card my-3 card-artikel rounded-3" style="max-width: 500px">
+                <div class="p-2">
+                  <img class="card-img-top" src="../asset/img/carousel/istockphoto-1324696780-170667a.jpg" alt="Card image cap" />
+                </div>
+                <div class="card-body w-100">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text text-card-artikel text-justify mb-4">
+                    Some quick example text to build on the card title and make up the bulk of the card's content. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores adipisci corporis ullam veritatis necessitatibus ratione
+                    aut suscipit, eius debitis optio dignissimos voluptates ut, veniam, recusandae earum. Nihil culpa voluptatum asperiores!
+                  </p>
+                  <a href="#" class="text-card-link-artikel text-decoration-none position-absolute bottom-0 end-0 m-2"
+                    ><small>Baca selengkapnya <i class="fa-solid fa-arrow-right-long"></i></small
+                  ></a>
+                </div>
+              </div>
+
+              <div class="card my-3 card-artikel rounded-3" style="max-width: 500px">
+                <div class="p-2">
+                  <img class="card-img-top" src="../asset/img/carousel/istockphoto-1324696780-170667a.jpg" alt="Card image cap" />
+                </div>
+                <div class="card-body w-100">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text text-card-artikel text-justify mb-4">
+                    Some quick example text to build on the card title and make up the bulk of the card's content. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores adipisci corporis ullam veritatis necessitatibus ratione
+                    aut suscipit, eius debitis optio dignissimos voluptates ut, veniam, recusandae earum. Nihil culpa voluptatum asperiores!
+                  </p>
+                  <a href="#" class="text-card-link-artikel text-decoration-none position-absolute bottom-0 end-0 m-2"
+                    ><small>Baca selengkapnya <i class="fa-solid fa-arrow-right-long"></i></small
+                  ></a>
+                </div>
+              </div>
+
+              <div class="card my-3 card-artikel rounded-3" style="max-width: 500px">
+                <div class="p-2">
+                  <img class="card-img-top" src="../asset/img/carousel/istockphoto-1324696780-170667a.jpg" alt="Card image cap" />
+                </div>
+                <div class="card-body w-100">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text text-card-artikel text-justify mb-4">
+                    Some quick example text to build on the card title and make up the bulk of the card's content. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores adipisci corporis ullam veritatis necessitatibus ratione
+                    aut suscipit, eius debitis optio dignissimos voluptates ut, veniam, recusandae earum. Nihil culpa voluptatum asperiores!
+                  </p>
+                  <a href="#" class="text-card-link-artikel text-decoration-none position-absolute bottom-0 end-0 m-2"
+                    ><small>Baca selengkapnya <i class="fa-solid fa-arrow-right-long"></i></small
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <section id="footer">
       <div class="footer container-fluid py-1 px-5">
-        <footer class="row pt-4" data-aos="fade-up" data-aos-once="true" data-aos-once="true">
-          <div class="col-md-4 mb-4">
+        <footer class="row pt-4" data-aos="fade-up" data-aos-once="true">
+          <div class="col-md-4 mb-5">
             <h4 class="mb-3 fw-bold border-bottom">INFORMASI</h4>
             <ul class="nav flex-column text">
               <li class="nav-item mb-2">YAYASAN GAPURA</li>
@@ -175,7 +287,7 @@
             </ul>
           </div>
 
-          <div class="col-md-4 mb-4">
+          <div class="col-md-4 mb-5">
             <h4 class="mb-3 fw-bold border-bottom">Kontak</h4>
             <table class="text">
               <tr>
@@ -209,7 +321,7 @@
             </table>
           </div>
 
-          <div class="col-md-4 mb-4">
+          <div class="col-md-4 mb-5">
             <h4 class="mb-3 fw-bold border-bottom">BEKERJA SAMA DENGAN</h4>
             <img src="../asset/img/logo/logo-website-versi-desktop.png" alt="logo arpateam" class="w-75" />
           </div>
@@ -220,6 +332,19 @@
 
     <!-- button scroll to top -->
     <button onclick="topFunction()" id="btn_to_top" title="Go to top"><i class="fa-solid fa-angle-up"></i></button>
+
+    <!-- slick js -->
+    <!-- <script type="text/javascript">
+      $('.slick').slick({
+        dots: true,
+        arrows: false,
+        infinite: false,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+      });
+    </script> -->
+    <!-- masonry -->
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
 
     <script>
       //Get the button

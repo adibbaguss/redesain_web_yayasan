@@ -359,17 +359,22 @@ header {
   overflow: hidden;
 }
 
+.card-info {
+  border-radius: 10px;
+  width: auto;
+}
+
 .card-img-zoom {
   width: 100%;
-  min-height: auto;
+  min-width: none;
   max-height: 400px;
   overflow: hidden;
 }
 
 .card-img-zoom img {
   width: 100%;
-  min-height: 450px;
-  max-height: max-content;
+  min-height: auto;
+  max-height: 450px;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
@@ -530,13 +535,98 @@ header {
 }
 
 /* artikel */
+.card-artikel {
+  margin: 0 10px 0 10px;
+}
 .card-img-artikel {
-  min-height: min-content;
-  max-height: 350px;
+  max-width: 150%;
+  max-height: 300px;
   overflow: hidden;
 }
+
 .card-img-artikel img {
+  min-width: 100%;
+  max-width: 500px;
   min-height: 100%;
-  min-width: min-content;
-  transform: scale(1.3);
+  max-height: 400px;
+}
+.card-artikel:hover {
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+
+.text-card-artikel {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4; /* number of lines to show */
+  -webkit-box-orient: vertical;
+}
+
+.text-card-link-artikel {
+  display: inline-block;
+  background: linear-gradient(to left, transparent 50%, #00715d 50%) right;
+  transition: 0.5s ease-out;
+  background-size: 200%;
+  color: #ffffff;
+  padding: 5px;
+  border-radius: 5px;
+  opacity: 0.5;
+}
+
+.card-artikel:hover .text-card-link-artikel {
+  background-position: left;
+  color: #ffffff;
+}
+
+.text-card-link-artikel:hover {
+  opacity: 1;
+}
+
+.text-artikel a {
+  text-decoration: none;
+  color: #333333;
+  position: relative;
+}
+
+.text-artikel a:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #333333;
+  transform-origin: bottom right;
+  transition: transform 1s ease-out;
+}
+
+.text-artikel a:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* view img artikel */
+.view-img-artikel {
+  width: 100%;
+  max-height: 500px;
+  overflow: hidden;
+}
+.view-img-artikel img {
+  width: 100%;
+}
+
+/* scroll artikel */
+
+.hidden-scrollbar {
+  overflow: hidden;
+  text-align: justify;
+}
+
+.hidden-scrollbar .inner {
+  min-height: 500px;
+  max-height: 900px;
+  overflow: auto;
+  margin: 15px -300px 15px 15px;
+  padding-right: 300px; /* Samakan dengan besar margin negatif */
 }
